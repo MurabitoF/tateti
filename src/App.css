@@ -1,0 +1,134 @@
+#root {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  margin-bottom: 1.6em;
+  text-align: center;
+  width: 100%;
+}
+
+.turns {
+  background-color: hsl(250, 100%, 85%);
+  color: var(--purple-color);
+  border-radius: 2rem;
+  width: 100%;
+  padding: .5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 0 var(--purple-light-color);
+}
+
+.marginLeft {
+  margin-left: 10px;
+}
+
+.player {
+  font-size: 2rem;
+  font-weight: 900;
+  text-shadow: 0 2px 0 var(--purple-light-color);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  grid-template-rows: repeat(3, minmax(150px, 1fr));
+  gap: 2em;
+}
+
+button {
+  background-color: var(--purple-light-color);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 8px 0 var(--purple-shadow-color);
+  font-family: 'Nunito';
+  cursor: pointer;
+}
+
+.btn-text {
+  font-family: 'Nunito';
+  font-size: 6rem;
+  font-weight: 900;
+  text-shadow: 0 3px 0 rgba(0, 0, 0, .2);
+}
+
+footer {
+  margin-top: 2.5em;
+  width: 95%;
+  height: 94px;
+}
+
+.reset-btn {
+  width: 100%;
+  background-color: var(--yellow-color);
+  color: var(--purple-shadow-color);
+  padding: .5em 1em;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: rgba(0, 0, 0, .55);
+}
+
+.modal {
+  background-color: hsl(250, 100%, 85%);
+  color: var(--purple-color);
+  padding: 3rem 4rem;
+  padding-top: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.player-X {
+  color: var(--player-x-color);
+}
+
+.player-O {
+  color: var(--player-o-color);
+}
+
+.modal h2 {
+  margin: 0;
+  font-size: 9rem;
+  font-weight: 1000;
+  line-height: 1.1;
+  text-shadow: 0 3px 0 var(--purple-light-color);
+}
+
+.modal p {
+  font-size: 2rem;
+  color: var(--purple-color);
+}
+
+.modal-btn {
+  background-color: var(--yellow-color);
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--purple-shadow-color);
+  padding: .5em 1em;
+  box-shadow: 0 8px 0 var(--purple-light-color);
+}
